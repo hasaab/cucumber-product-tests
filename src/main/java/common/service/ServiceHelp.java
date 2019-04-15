@@ -11,7 +11,7 @@ import com.jayway.restassured.config.ConnectionConfig;
 import com.jayway.restassured.config.RestAssuredConfig;
 import com.jayway.restassured.response.Response;
 
-public class Service {
+public class ServiceHelp {
 
   public static RestAssuredConfig config = RestAssured.config().connectionConfig(new ConnectionConfig().closeIdleConnectionsAfterEachResponseAfter(10, TimeUnit.MILLISECONDS));
 

@@ -2,9 +2,6 @@ package common.setup;
 
 import org.json.simple.JSONObject;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static common.setup.AllPages.*;
 
 public class AllProducts {

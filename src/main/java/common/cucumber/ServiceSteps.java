@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import common.setup.AllRequests;
+import common.service.ServiceHelp;
+import common.setup.AllProducts;
 import common.util.DataGen;
 import org.json.simple.JSONObject;
 import org.junit.Assert;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 
-import static common.service.Service.sendRequest;
+import static common.service.ServiceHelp.sendRequest;
 import com.jayway.restassured.response.Response;
 
 public class ServiceSteps {
@@ -34,14 +35,14 @@ public class ServiceSteps {
 
     String requestType = requestMap.get("type");
 
-    String fullRequestURL = AllRequests.getFullRequestURL(requestName);
+    String fullRequestURL = AllProducts.getFullRequestURL(requestName);
 
     JSONObject requestBody = new JSONObject();
 
     if(!(requestType.equals("GET")))
     {
-      requestBody = AllRequests.getRequestBodyByRequestName(requestName);
-      requestBody = AllRequests.setRequestValues(requestBody, requestMap);
+      requestBody = AllProducts.getRequestBodyByRequestName(requestName);
+      requestBody = ServiceHelp.setRequestValues(requestBody, requestMap);
     }
     currentResponse = sendRequest(serviceName,fullRequestURL,requestType,requestBody);
 
