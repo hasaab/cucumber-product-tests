@@ -11,19 +11,19 @@ public class AllURLs {
     public static String getProductURL()
     {
 
-        if (System.getProperty("product").equals("YouTube") && System.getProperty("runEnvironment").equals("DEV"))
+        if (System.getProperty("product").contains("YouTube") && System.getProperty("runEnvironment").equals("DEV"))
             return YouTubeDev;
-        else if (System.getProperty("product").equals("YouTube") && System.getProperty("runEnvironment").equals("QA"))
+        else if (System.getProperty("product").contains("YouTube") && System.getProperty("runEnvironment").equals("QA"))
             return YouTubeQA;
-        else if (System.getProperty("product").equals("YouTube") && System.getProperty("runEnvironment").equals("PROD"))
+        else if (System.getProperty("product").contains("YouTube") && System.getProperty("runEnvironment").equals("PROD"))
             return YouTubeProd;
 
 
-        else if (System.getProperty("product").equals("Google") && System.getProperty("runEnvironment").equals("DEV"))
+        else if (System.getProperty("product").contains("Google") && System.getProperty("runEnvironment").equals("DEV"))
             return GoogleDev;
-        else if (System.getProperty("product").equals("Google") && System.getProperty("runEnvironment").equals("QA"))
+        else if (System.getProperty("product").contains("Google") && System.getProperty("runEnvironment").equals("QA"))
             return GoogleQA;
-        else if (System.getProperty("product").equals("Google") && System.getProperty("runEnvironment").equals("PROD"))
+        else if (System.getProperty("product").contains("Google") && System.getProperty("runEnvironment").equals("PROD"))
             return GoogleProd;
 
         else return "Product URL has not been defined";

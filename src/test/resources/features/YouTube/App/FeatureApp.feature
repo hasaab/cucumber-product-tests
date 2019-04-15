@@ -3,11 +3,6 @@
 
 Feature: Android Calculator Plus Tests
 
-  Background:
-    Given I am testing the "CalculatorPlus" product
-    And I am on the "Main" page
-
-
   Scenario Outline:YoutubeApp -  I can execute simple 2 operand calculations with correct result
     Given I select the "<operand1>" element -App
     And I select the "<arithmetic>" element -App
