@@ -2,9 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/setup/AllPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/setup/AllProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/setup/AllURLs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/util/DataHelp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/util/FileHelp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/products/Google/Pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/products/Google/Pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/products/YouTube/Pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/products/YouTube/Pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/WebDrivers/IEDriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/extent-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/remotewebdriver/StartSeleniumHub.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/remotewebdriver/StartSeleniumNode1.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/remotewebdriver/selenium-server-standalone-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WebDrivers/IEDriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductTests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductTests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/App/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/DataBase/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/util/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/DataGen/DataGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/util/DataGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Common/Web/WebHelp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages/LinkedInWebMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages/LinkedInWebSignIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages/LinkedInWebSignOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/LinkedIn/RequestsLinkedIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/LinkedIn/SpecSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/YouTube/SpecSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/YouTube/Pages/YouTubeAppMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/YouTube/Pages/YouTubeWebMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/YouTube/RequestsYouTube.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product/YouTube/SpecSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/Google/SpecSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Service/AllRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/setup/AllRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Service/ServiceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/ServiceSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/SetUp/CucumberHooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/SetUp/RunCukes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/SetUp/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/setup/SetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Web/AllPages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Web/WebSteps.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/WebDrivers/chromeDriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/WebDrivers/chromeDriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedIn/Features/App/FeatureApp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/App/FeatureApp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedIn/Features/Service/FeatureREST.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Service/FeatureREST.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedIn/Features/Web/FeatureWeb.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Web/FeatureWeb.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YouTube/Features/App/FeatureApp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/App/FeatureApp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YouTube/Features/Service/FeatureREST.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/Service/FeatureREST.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YouTube/Features/Web/FeatureWeb.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestReportsProductTests_Default_2017-08-07-102837_evidence.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestReportsProductTests_Default_2017-08-07-102841_evidence.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,16 +70,107 @@
       <FILTER>cucumber.api.cli.*</FILTER>
     </SUITE>
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ProductTests" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages/LinkedInWebMain.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/LinkedIn/App/FeatureApp.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="3" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="22" selection-end-column="3" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/app/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="63" column="101" selection-start-line="63" selection-start-column="101" selection-end-line="63" selection-end-column="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/AllPages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/AllProducts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/AllURLs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/App/FeatureApp.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -53,29 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Cucumber/Service/Messenger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Engine/Service/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Cucumber/App/AllPages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Cucumber/App/WebSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Cucumber/App/AppSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Steps/App/AllPages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Engine/DataGen/MyUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Steps/SetUp/Setups.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Engine/Web/Web.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Steps/SetUp/SetUp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Engine/Web/WebHelp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Steps/Web/WebSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Steps/Web/AllPages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Steps/WebAndApp/AllPages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Product/LinkedIn/Common/App/App/CommonApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LinkedIn/Templates/AllRequests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Product/YouTube/WebMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Product/YouTube/Pages/WebMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages/AppMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Test/WebAndApp/AllPages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Product/YouTube/Templates/Request1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Product/YouTube/Templates/YouTubeRequests.java" />
         <option value="$PROJECT_DIR$/src/main/java/Common/Service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/Product/LinkedIn/Templates.java" />
         <option value="$PROJECT_DIR$/src/main/java/Product/LinkedIn/LinkedInTemplates.java" />
@@ -102,8 +221,31 @@
         <option value="$PROJECT_DIR$/src/test/java/LinkedIn/Features/Web/FeatureWeb.feature" />
         <option value="$PROJECT_DIR$/src/main/java/Test/Web/WebSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/Common/Web/WebHelp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Test/SetUp/SetUp.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test/SetUp/CucumberHooks.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Test/SetUp/SetUp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test/SetUp/RunnerHooks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test/setup/RunnerHooks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test/setup/AllPages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/setup/AllPages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/setup/AllPages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/setup/CucumberHooks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/cucumber/cucumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/util/FileHelp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/cucumber/ServiceSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/service/AllRequests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/service/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/setup/AllRequests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Search.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/Service/FeatureREST.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/App/FeatureApp.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Web/FeatureWeb.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Service/FeatureREST.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/LinkedIn/App/FeatureApp.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/setup/AllProducts.java" />
       </list>
     </option>
   </component>
@@ -184,7 +326,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Product" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -192,8 +334,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Product" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedIn" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="setup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -201,45 +343,98 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Product" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="LinkedIn" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="YouTube" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550531635766" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/YouTube/Web" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\main\java" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\test\java\YouTube\Features\App" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\main\Common" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\test\java\ProductX\Features\App" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\test\java\ProductX\AppFeatures" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="LinkedIn" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\resources\features\YouTube\Web" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\main\resources" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\main\java" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\main\java\common" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\main\java\Test\setup" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="common.cucumber" />
+      <recent name="Test.SetUp" />
       <recent name="Cucumber.App" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\resources\features" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\java\resources" />
+      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\main\java" />
       <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\test\java\YouTube\Features\App" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\test\java\YouTube\Features" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\main\resources\WebDrivers" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\main\resources\ProductX" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -254,34 +449,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: I can login and logout on LinkedIn">
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -290,81 +458,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: FeatureREST" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="GLUE" value="Engine Steps.CommonSteps Steps.RESTSteps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ProductTests" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: FeatureWeb" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="GLUE" value="Test.SetUp Test.Web" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ProductTests" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Check this out (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="GLUE" value="Test.SetUp Test.Web" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ProductTests" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Check this out$&quot;" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Check this out" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="GLUE" value="Engine Steps.CommonSteps Steps.WebSteps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ProductTests" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Check this out$&quot;" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: I can login and logout on LinkedIn" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="GLUE" value="Test.SetUp Test.Web" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ProductTests" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^I can login and logout on LinkedIn$&quot;" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -411,6 +504,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -427,22 +521,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Cucumber java.Feature: FeatureREST" />
-      <item itemvalue="Cucumber java.Scenario: Check this out" />
-      <item itemvalue="Cucumber java.Scenario: Check this out (1)" />
-      <item itemvalue="Cucumber java.Scenario: I can login and logout on LinkedIn" />
-      <item itemvalue="Cucumber java.Feature: FeatureWeb" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cucumber java.Scenario: I can login and logout on LinkedIn" />
-        <item itemvalue="Cucumber java.Feature: FeatureWeb" />
-        <item itemvalue="Cucumber java.Scenario: Check this out (1)" />
-        <item itemvalue="Cucumber java.Feature: FeatureREST" />
-        <item itemvalue="Cucumber java.Scenario: Check this out" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -499,10 +577,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23967612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2708018" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -511,7 +589,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3291367" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49691358" visible="true" weight="0.57733816" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5467626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -574,13 +652,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Test/Service/ServiceSteps.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Test/Web/WebSteps.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/web/WebSteps.java</url>
           <line>77</line>
           <properties />
           <option name="timeStamp" value="49" />
@@ -598,71 +670,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.jar!/cucumber/runtime/Timeout.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar!/cucumber/runtime/java/JavaStepDefinition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Steps/CommonSteps/CommonSteps.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/LinkedIn/Features/Service/FeatureREST.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Product/LinkedIn/Common/App/Service/CommonREST.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/LinkedIn/Templates/Services.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Product/LinkedIn/Common/App/Web/CommonWeb.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/LinkedIn/Features/App/FeatureApp.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/SetUp/RunCukes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cucumber/Web/SelectsWeb.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cucumber/Web/NavigatesWeb.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cucumber/Web/EntersWeb.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cucumber/Service/Messenger.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cucumber/Service/CreateRequests.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cucumber/App/AllPagesApp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Steps/App/AllPages.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Steps/App/AppSteps.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Product/LinkedIn/Common/App/App/CommonApp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/LinkedIn/Pages/App/PagesAppMain.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/LinkedIn/Pages/Web/PagesWebMain.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/LinkedIn/Templates/AllRequests.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/YouTube/Features/App/FeatureApp.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/YouTube/Features/Service/FeatureREST.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Service/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Common/Web/Web.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Product/LinkedIn/RequestsLinkedIn.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -696,44 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/Service/AllRequests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/Service/ServiceSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/App/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/DataBase/DataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/DataGen/DataGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -772,34 +741,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/YouTube/Features/Web/FeatureWeb.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/Web/FeatureWeb.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/TestReports/testFailureImage2017-04-02172832.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/SetUp/CucumberHooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/SetUp/SetUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/Web/WebSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/WebSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
@@ -809,14 +759,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Common/Web/WebHelp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/Web/WebHelp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/Web/AllPages.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/web/AllPages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
@@ -830,17 +780,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LinkedIn/Features/Web/FeatureWeb.feature">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="374">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Product/LinkedIn/Pages/LinkedInWebMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="221">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/RunCukes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/CucumberHooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/SetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="143" column="3" selection-start-line="29" selection-start-column="2" selection-end-line="143" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/products/YouTube/Pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/products/YouTube/SpecSteps.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/products/Google/Pages/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/products/Google/SpecSteps.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/products/Google/Pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/products/YouTube/Pages/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/cucumber/ServiceSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/AllRequests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/util/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/util/DataGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/util/DataHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/util/FileHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/extent-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Search.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/Service/FeatureREST.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/App/FeatureApp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/LinkedIn/App/FeatureApp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/LinkedIn/Web/FeatureWeb.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/LinkedIn/Service/FeatureREST.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/AllURLs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="63" column="101" selection-start-line="63" selection-start-column="101" selection-end-line="63" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/AllPages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/AllProducts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
