@@ -8,6 +8,8 @@ public class AllURLs {
     public static String GoogleDev = "https://www.google.com";
     public static String GoogleQA = "https://www.google.com";
     public static String GoogleProd = "https://www.google.com";
+
+    
     public static String getProductURL()
     {
 
