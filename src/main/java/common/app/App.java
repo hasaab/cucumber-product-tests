@@ -54,7 +54,11 @@ public class App {
 
     public static void StopAndroidDriver() {
 
+        try{
         androidDriver.close();
+        }
+        catch (Exception ex)
+        {System.out.println("Could not close android Driver or no android driver was running");}
     }
 
     //------------------------------------------------------------------------//
@@ -89,7 +93,11 @@ public class App {
 
     public static void StopIOSDriver() {
 
-        iosDriver.close();
+        try {
+            iosDriver.close();
+        }
+        catch (Exception ex)
+        {System.out.println("Could not close ios Driver or no ios driver was running");}
     }
 
 
