@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="not used feature comment out">
+    <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="app fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/App/FeatureApp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/App/FeatureApp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Service/FeatureREST.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Service/FeatureREST.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Web/FeatureWeb.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Web/FeatureWeb.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/YouTube/App/FeatureApp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/App/FeatureApp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,11 +36,35 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="117" column="10" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/LinkedIn/Service/FeatureREST.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/app/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/Service/FeatureREST.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -159,12 +180,12 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Search.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/Service/FeatureREST.feature" />
-        <option value="$PROJECT_DIR$/src/main/java/common/app/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/LinkedIn/App/FeatureApp.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Service/FeatureREST.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/LinkedIn/Web/FeatureWeb.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/YouTube/App/FeatureApp.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/common/app/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" />
       </list>
     </option>
   </component>
@@ -234,6 +255,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-product-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="setup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cucumber-product-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -569,7 +608,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555427448492</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="not used feature comment out">
+      <created>1555427744123</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555427744123</updated>
+    </task>
+    <task id="LOCAL-00008" summary="app fix">
+      <created>1555428083525</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555428083525</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -615,6 +668,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -688,7 +742,8 @@
     <MESSAGE value="update dependencies" />
     <MESSAGE value="clenup before day end" />
     <MESSAGE value="not used feature comment out" />
-    <option name="LAST_COMMIT_MESSAGE" value="not used feature comment out" />
+    <MESSAGE value="app fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="app fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,26 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -963,6 +998,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="117" column="10" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

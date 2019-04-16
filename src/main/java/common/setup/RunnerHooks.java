@@ -104,8 +104,8 @@ public class RunnerHooks {
         {
             ITakeScreenShot(myScenario + " failed_" + getTimeStamp("YYYY-MM-DD-HH-mm-ss-SSS"));
             StopWebDriver();
-            StopAndroidDriver();
-            StartIOSDriver();
+            //StopAndroidDriver();
+            //StartIOSDriver();
 
             System.out.println("Test Failed ! \n");
             }
@@ -114,8 +114,8 @@ public class RunnerHooks {
             System.out.println("Test Passed ! \n");
         }
         StopWebDriver();
-        StopAndroidDriver();
-        StartIOSDriver();
+        //StopAndroidDriver();
+        //StartIOSDriver();
         System.out.println("************************************************************************************\n");
 
 
