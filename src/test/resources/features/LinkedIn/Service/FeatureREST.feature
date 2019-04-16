@@ -2,3 +2,6 @@
 #Keywords Summary : Jsonplaceholder fake REST Service Test
 
 Feature:  Jsonplaceholder fake REST Service Test
+
+  @LinkedinRESTSmoke
+  Scenario : LinkedinREST -

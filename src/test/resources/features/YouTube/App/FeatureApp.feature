@@ -3,6 +3,7 @@
 
 Feature: Android Calculator Plus Tests
 
+  @YouTubeAppSmoke
   Scenario Outline:YoutubeApp -  I can execute simple 2 operand calculations with correct result
     Given I select the "<operand1>" element -App
     And I select the "<arithmetic>" element -App

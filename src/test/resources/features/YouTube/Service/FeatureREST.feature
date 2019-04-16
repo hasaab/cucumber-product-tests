@@ -3,7 +3,7 @@
 
 Feature:  Jsonplaceholder fake REST Service Test
 
-  @REST
+  @YouTubeRESTSmoke
   Scenario:YoutubeREST -  Getting simple Post by random user and validate details
     When Sending next REST request with next data
       |service  |FakeREST					    |
@@ -15,7 +15,7 @@ Feature:  Jsonplaceholder fake REST Service Test
       |expected3   |title    |
       |expected4   |body     |
 
-  @REST
+  @YouTubeRESTRegression
   Scenario: YoutubeREST - Getting simple Comment by random user and validate email address
     When Sending next REST request with next data
       |service  |FakeREST 		                  |
@@ -24,7 +24,7 @@ Feature:  Jsonplaceholder fake REST Service Test
     Then Verifying next REST response details
       |validate1  |email_address   |
 
-  @REST
+  @YouTubeRESTRegression
   Scenario:YoutubeREST -  Sending simple Post by random user and validate response 200 OK
     When Sending next REST request with next data
       |service|FakeREST 		                |

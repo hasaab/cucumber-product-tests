@@ -3,7 +3,7 @@
 
 Feature: YouTube Search Tests
 
-  @Smoke
+  @YouTubeWebSmoke
   Scenario:YouTubeWeb - I can find and play my music
     Given I navigate to the Home page
     And I "enter" "Dash Berlin - With you" into the "search_field"

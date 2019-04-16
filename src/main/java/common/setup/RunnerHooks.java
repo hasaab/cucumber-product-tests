@@ -12,11 +12,10 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import static common.app.App.*;
 import static common.cucumber.IWebSteps.ITakeScreenShot;
 import static common.selenium.WebSteps.StartWebDriver;
 import static common.selenium.WebSteps.StopWebDriver;
-import static common.setup.SetUp.appDriver;
-import static common.setup.SetUp.projectPath;
 import static common.util.DataHelp.getTimeStamp;
 
 public class RunnerHooks {
@@ -90,9 +89,9 @@ public class RunnerHooks {
          if(scenario.getName().contains("Web"))
             StartWebDriver(System.getProperty("runDriver"));
         if(scenario.getName().contains("Android"))
-            AndroidSetup();
+            StartAndroidDriver();
         if(scenario.getName().contains("IOS"))
-            IOSSetup();
+            StartIOSDriver();
 
         System.out.println("************************************************************************************\n");
 
@@ -105,9 +104,8 @@ public class RunnerHooks {
         {
             ITakeScreenShot(myScenario + " failed_" + getTimeStamp("YYYY-MM-DD-HH-mm-ss-SSS"));
             StopWebDriver();
-
-            appDriver.close();
-            appDriver.quit();
+            StopAndroidDriver();
+            StartIOSDriver();
 
             System.out.println("Test Failed ! \n");
             }
@@ -116,76 +114,13 @@ public class RunnerHooks {
             System.out.println("Test Passed ! \n");
         }
         StopWebDriver();
+        StopAndroidDriver();
+        StartIOSDriver();
         System.out.println("************************************************************************************\n");
 
 
     }
 
-
-    public static AndroidDriver AndroidSetup() throws MalformedURLException {
-
-        File app = new File(projectPath, "com.digitalchemy.calculator.freedecimal-5.1.0-www.APK4Fun.com.apk");
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("Platform Name","Android");
-
-        //REALDEVICE:
-        //capabilities.setCapability("deviceName", "Galaxy S5 Neo");
-        //capabilities.setCapability("platformVersion", "6.0.1");
-
-        //AVD:
-        capabilities.setCapability("deviceName", "emulator-5554");
-        capabilities.setCapability("platformVersion", "6.0");
-
-        //GENYMOTION
-        //capabilities.setCapability("deviceName", "AndroidTestDevice");
-        //capabilities.setCapability("platformVersion", "6.0");
-
-        capabilities.setCapability("platform", "Windows");
-        capabilities.setCapability("automationName", "Appium");
-        capabilities.setCapability("app", app.getAbsolutePath());
-        capabilities.setCapability("appPackage", "com.digitalchemy.calculator.freedecimal");
-        capabilities.setCapability("appWaitPackage", "com.digitalchemy.calculator.freedecimal");
-        //capabilities.setCapability("appActivity", "");
-        //capabilities.setCapability("appWaitActivity", "");
-        capabilities.setCapability("autoAcceptAlerts",true);
-        capabilities.setCapability("fullReset",true);
-        //capabilities.setCapability("deviceReadyTimeout", 500);
-        //capabilities.setCapability("newCommandTimeout", 500);
-
-        appDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-
-        //if (androiddriver.isLocked()){	System.out.println("device is locked");	}
-        //else{	System.out.println("device is not locked");	}
-        return (AndroidDriver) appDriver;
-    }
-
-    //------------------------------------------------------------------------//
-
-    @Before("@IOS")
-    public static IOSDriver IOSSetup() throws MalformedURLException {
-        System.out.println("*******************\n");
-        System.out.println(" Launching IOS driver \n");
-
-        File appDir = new File(projectPath + "\\src\\main\\resources\\ProductX\\");
-        File app = new File(appDir, "com.linkedin.android-4.0.53.com.apk");
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("app", app.getAbsolutePath());
-        capabilities.setCapability("platformName", "ios");
-        capabilities.setCapability("platformVersion", "");
-        capabilities.setCapability("deviceName", "");
-        capabilities.setCapability("udid", "");
-        capabilities.setCapability("deviceReadyTimeout", 45);
-        capabilities.setCapability("newCommandTimeout", 180);
-        capabilities.setCapability("sendKeyStrategy", "oneByOne");
-
-        appDriver = new IOSDriver(new URL("http://127.0.0.1:5010/wd/hub"), capabilities);
-
-        //if (androiddriver.isLocked()){	System.out.println("device is locked");	}
-        //else{	System.out.println("device is not locked");	}
-
-        return (IOSDriver) appDriver;
-    }
 
     //-----------------------------------------------------------------------------//
 

@@ -3,6 +3,8 @@ package common.setup;
 import org.json.simple.JSONObject;
 
 import static common.setup.AllPages.*;
+import static common.setup.AllRequests.getLinkedinRequestURL;
+import static common.setup.AllRequests.getYouTubeRequestURL;
 
 public class AllProducts {
 
@@ -10,32 +12,33 @@ public class AllProducts {
     {
         if(System.getProperty("product").contains("YouTube"))
             return getYouTubeElementSelector(elementName);
-        else if(System.getProperty("product").contains("Google"))
-            return getGoogleElementSelector(elementName);
+        else if(System.getProperty("product").contains("Linkedin"))
+            return getLinkedinElementSelector(elementName);
         else {System.out.println("Product has not been defined in AllProducts");
             return "";}
     }
 
     public static String getFullRequestURL(String requestName) {
-        String fullRequestURL = null;
-        if (System.getProperty("product").contains("features/YouTube")) {
-            fullRequestURL = AllRequests.getYouTubeFullRequestURL(requestName);
+        if (System.getProperty("product").contains("YouTube")) {
+            return getYouTubeRequestURL(requestName);}
+        else if (System.getProperty("product").contains("Linkedin")) {
+            return getLinkedinRequestURL(requestName);
         } else {
-            System.out.println(requestName + " request has not defined yet in the test requests AllPages \n");
-            return null;
+            System.out.println("Product has not defined yet in the test requests AllProducts \n");
+            return "";
         }
-        return fullRequestURL;
     }
 
     public static JSONObject getRequestBodyByRequestName(String requestName) {
-        JSONObject requestBody = new JSONObject();
-        if (System.getProperty("product").contains("features/YouTube")) {
-            requestBody = AllRequests.getYouTubeRequestBody(requestName);
-        } else {
-            System.out.println(requestName + " request has not defined yet in the test requests AllPages \n");
+        if (System.getProperty("product").contains("YouTube")) {
+            return AllRequests.getYouTubeRequestBody(requestName);
+        }
+        else if (System.getProperty("product").contains("Linkedin")) {
+             return AllRequests.getLinkedinRequestBody(requestName);
+        }else {
+            System.out.println("Product request has not defined yet in the test requests AllProducts \n");
             return null;
         }
-        return requestBody;
     }
 
 

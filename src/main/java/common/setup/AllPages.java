@@ -13,12 +13,12 @@ public class AllPages {
             return "";}
     }
 
-    public static String getGoogleElementSelector(String elementName)
+    public static String getLinkedinElementSelector(String elementName)
     {
         if(System.getProperty("activePage").equals("Home"))
-            return products.Google.Pages.HomePage.getElementSelector(elementName);
+            return products.Linkedin.Pages.HomePage.getElementSelector(elementName);
         else if(System.getProperty("activePage").equals("Search"))
-            return products.Google.Pages.SearchPage.getElementSelector(elementName);
+            return products.Linkedin.Pages.SearchPage.getElementSelector(elementName);
         else {System.out.println( System.getProperty("product") + " " + System.getProperty("activePage") +
                                   " Page has not been defined in the AllPages");
             return "";}

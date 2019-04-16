@@ -3,7 +3,7 @@
 
 Feature: YouTube Home Tests
 
-  @Regression
+  @YouTubeWebRegression
   Scenario:YouTubeWeb - I can find videos with Zurich
     Given I navigate to the Home page
     And I "enter" "Zurich" into the "search_field"

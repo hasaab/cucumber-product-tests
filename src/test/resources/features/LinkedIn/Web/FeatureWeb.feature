@@ -2,3 +2,6 @@
 #Keywords Summary : Web Tests
 
 Feature: LinkedIn Web Tests
+
+  @LinkedinWebSmoke
+  Scenario : LinkedinWeb -

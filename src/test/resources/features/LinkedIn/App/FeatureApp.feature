@@ -3,8 +3,7 @@
 
 Feature: Android Calculator Plus Tests
 
-
-  @ANDROID @Smoke
+  @LinkedinAppSmoke
   Scenario Outline:LinkedinApp I can execute simple 2 operand calculations with correct result
     Given I select the "<operand1>" element
     And I select the "<arithmetic>" element
