@@ -41,9 +41,9 @@ public class IWebSteps {
     public static void ISwitchToTheWindow(int windowNumber)
     {AssertExecutedStep(SwitchToWindow(windowNumber));}
 
-    @Given("^I switch to the default content$")
-    public static void ISwitchToTheDefaultContent()
-    {AssertExecutedStep(SwitchToDefaultContent());}
+    @Given("^I switch to the \"([^\"]*)\" content$")
+    public static void ISwitchToTheDefaultContent(String content)
+    { AssertExecutedStep(SwitchToContent(content, AllProducts.getElementSelector(content)));}
 
     @Given("^I \"([^\"]*)\" the \"([^\"]*)\"$")
     public static void IActTheElement(String act, String elementName)

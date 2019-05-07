@@ -177,21 +177,74 @@ public class WebHelp {
         catch (Exception ex){return ex.toString();}
     }
 
-    public static String waitToAppear(String elementSelector)
-    {
+    public static Boolean checkAppeared(String elementSelector) {
         double startTime = 0;
-        while (startTime < waitTimeMax)
-        {
-            if(isDisplayed(elementSelector).equals("PASS"))
-                return  "PASS";
-            else
-                {
-                    sleep(waitTime);
-                    startTime = startTime + waitTime;
-                }
+
+        while (startTime < waitTimeMax) {
+            if (isDisplayed(elementSelector).equals("PASS"))
+                return true;
+            else {
+                sleep(waitTime);
+                startTime = startTime + waitTime;
+            }
         }
-        return isDisplayed(elementSelector);
+        if (!isDisplayed(elementSelector).equals("PASS"))
+            return false;
+        else return true;
     }
+
+    public static void tryToSwitchFrame(int index) {
+        try{   webDriver.switchTo().frame(webDriver.findElements(By.xpath("//iframe")).get(index));}
+        catch (Exception ex) {}
+    }
+
+    public static String waitToAppear(String elementSelector) {
+
+        if (checkAppeared(elementSelector))
+            return "PASS";
+
+        else {
+
+            webDriver.switchTo().defaultContent();
+
+            for (int i = 0; i < 4; i++) {
+                tryToSwitchFrame(i);
+                for (int j = 0; j < 4; j++) {
+
+                    if (isDisplayed(elementSelector).equals("PASS"))
+                        return "PASS";
+
+                    tryToSwitchFrame(j);
+
+                    for (int x = 0; x < 4; x++) {
+
+                        if (isDisplayed(elementSelector).equals("PASS"))
+                            return "PASS";
+
+                        tryToSwitchFrame(x);
+
+                        for (int y = 0; y < 4; y++) {
+
+                            if (isDisplayed(elementSelector).equals("PASS"))
+                                return "PASS";
+
+                            tryToSwitchFrame(y);
+                        }
+                        webDriver.switchTo().defaultContent();
+                    }
+                    webDriver.switchTo().defaultContent();
+                }
+                webDriver.switchTo().defaultContent();
+            }
+
+        }
+
+        return isDisplayed(elementSelector);
+
+    }
+
+
+
 
     public static String waitToDisappear(String elementSelector)
     {
@@ -213,7 +266,6 @@ public class WebHelp {
     {
         try
         {
-            webDriver.switchTo().defaultContent();
             if(verifyNotNull(frameSelector)) {
                 waitToAppear(frameSelector);
                 WebElement frame = webDriver.findElement(By.xpath(frameSelector));

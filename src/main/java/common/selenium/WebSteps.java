@@ -2,6 +2,7 @@ package common.selenium;
 
 import common.util.DataHelp;
 import common.util.FileHelp;
+import org.openqa.selenium.By;
 
 public class WebSteps extends WebHelp {
 
@@ -30,8 +31,11 @@ public class WebSteps extends WebHelp {
         return switchToWindow(windowNumber)  +" : "+ "I switch to the " + windowNumber + " window" +"\n";
     }
 
-    public static String SwitchToDefaultContent() {
-        return switchToDefaultContent() +" : "+ "I switch to the default content" +"\n";
+    public static String SwitchToContent(String content, String elementSelector) {
+        if(content.equals("default"))
+            return switchToDefaultContent() +" : "+ "I switch to the default content" +"\n";
+        else
+            return switchToFrame(elementSelector) +" : "+ "I switch to the " + content + " content with selector " + elementSelector + "\n";
     }
 
     public static String WaitToAppear(String elementName, String elementSelector){
