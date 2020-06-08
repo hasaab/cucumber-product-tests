@@ -1,5 +1,6 @@
 package common.selenium;
 
+import common.setup.RunnerHooks;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,7 +30,7 @@ public class WebHelp {
     public static int waitTimeMax= 5000;
     public static int waitTime = 250;
 
-    public static String startWebDriver(String driver)
+    public static String startMyWebDriver(String driver)
     {
         try
         {
@@ -109,18 +110,15 @@ public class WebHelp {
 
             webDriver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
             webDriver.manage().timeouts().setScriptTimeout(20,TimeUnit.SECONDS);
-
             webDriver.manage().window().maximize();
-
             return  "PASS";
 
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
-
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
-    public static String stopWebDriver()
+    public static String stopMyWebDriver()
     {
         try
         {
@@ -129,7 +127,7 @@ public class WebHelp {
             return  "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "NOTE";}
     }
 
     public static String navigateTo(String URL)
@@ -141,7 +139,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static Boolean verifyNotNull(String text)
@@ -174,77 +172,25 @@ public class WebHelp {
             Thread.sleep(sleep);
             return "PASS";
         }
-        catch (Exception ex){return ex.toString();}
+        catch (Exception ex)
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
-    public static Boolean checkAppeared(String elementSelector) {
+    public static String waitToAppear(String elementSelector)
+    {
         double startTime = 0;
-
-        while (startTime < waitTimeMax) {
-            if (isDisplayed(elementSelector).equals("PASS"))
-                return true;
-            else {
-                sleep(waitTime);
-                startTime = startTime + waitTime;
-            }
-        }
-        if (!isDisplayed(elementSelector).equals("PASS"))
-            return false;
-        else return true;
-    }
-
-    public static void tryToSwitchFrame(int index) {
-        try{   webDriver.switchTo().frame(webDriver.findElements(By.xpath("//iframe")).get(index));}
-        catch (Exception ex) {}
-    }
-
-    public static String waitToAppear(String elementSelector) {
-
-        if (checkAppeared(elementSelector))
-            return "PASS";
-
-        else {
-
-            webDriver.switchTo().defaultContent();
-
-            for (int i = 0; i < 4; i++) {
-                tryToSwitchFrame(i);
-                for (int j = 0; j < 4; j++) {
-
-                    if (isDisplayed(elementSelector).equals("PASS"))
-                        return "PASS";
-
-                    tryToSwitchFrame(j);
-
-                    for (int x = 0; x < 4; x++) {
-
-                        if (isDisplayed(elementSelector).equals("PASS"))
-                            return "PASS";
-
-                        tryToSwitchFrame(x);
-
-                        for (int y = 0; y < 4; y++) {
-
-                            if (isDisplayed(elementSelector).equals("PASS"))
-                                return "PASS";
-
-                            tryToSwitchFrame(y);
-                        }
-                        webDriver.switchTo().defaultContent();
-                    }
-                    webDriver.switchTo().defaultContent();
+        while (startTime < waitTimeMax)
+        {
+            if(isDisplayed(elementSelector).equals("PASS"))
+                return  "PASS";
+            else
+                {
+                    sleep(waitTime);
+                    startTime = startTime + waitTime;
                 }
-                webDriver.switchTo().defaultContent();
-            }
-
         }
-
         return isDisplayed(elementSelector);
-
     }
-
-
-
 
     public static String waitToDisappear(String elementSelector)
     {
@@ -266,6 +212,7 @@ public class WebHelp {
     {
         try
         {
+            webDriver.switchTo().defaultContent();
             if(verifyNotNull(frameSelector)) {
                 waitToAppear(frameSelector);
                 WebElement frame = webDriver.findElement(By.xpath(frameSelector));
@@ -276,7 +223,7 @@ public class WebHelp {
             else return "FAIL";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String switchToFrameInFrame(String frameSelector1, String frameSelector2)
@@ -301,7 +248,7 @@ public class WebHelp {
             else return "FAIL";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String switchToDefaultContent()
@@ -312,7 +259,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String switchToWindow(int windowNumber)
@@ -324,7 +271,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String keyActions(String actionKey)
@@ -359,7 +306,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String sendKeys(String elementSelector, String actionKey)
@@ -394,7 +341,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
 
@@ -408,7 +355,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String handleAlert(String action)
@@ -423,7 +370,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String readTextOfWebElement(String elementSelector)
@@ -434,7 +381,7 @@ public class WebHelp {
             return webElement.getText();
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String readAttributeOfWebElement(String elementSelector, String attribute)
@@ -445,7 +392,7 @@ public class WebHelp {
             return webElement.getAttribute(attribute);
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String isChecked(String elementSelector, String status)
@@ -461,7 +408,7 @@ public class WebHelp {
             else return "FAIL";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String tryToSelect(WebElement webElement)
@@ -473,7 +420,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String tryToClick(WebElement webElement)
@@ -484,7 +431,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String tryToHover(WebElement webElement)
@@ -496,7 +443,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String scrollAnd(String act, String elementSelector)
@@ -531,7 +478,7 @@ public class WebHelp {
             return result;
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String safeAct(String act, String elementSelector)
@@ -554,7 +501,7 @@ public class WebHelp {
             else {System.out.println(act + " action has not been defined"); return  "FAIL";}
         }
         catch(Exception ex)
-        {return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String safeInto(String act, String elementSelector, String text)
@@ -578,7 +525,7 @@ public class WebHelp {
             else { System.out.println(act + " action has not been defined");return "FAIL";}
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String takeScreenShot(String dest)
@@ -592,7 +539,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String selectFromDropDownBy(String elementSelector,String what, String text)
@@ -610,7 +557,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String clickFromDropDownBy(String dropdownSelector, String optionsSelector, String text, String attribute)
@@ -640,7 +587,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String isSelected(String elementSelector, String status)
@@ -661,7 +608,7 @@ public class WebHelp {
             else { System.out.println(status + " has not been defined");return "FAIL";}
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String uploadFileWithKey(String fileName)
@@ -684,7 +631,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String uploadFile(String browserButtonSelector, String fileName)
@@ -696,7 +643,7 @@ public class WebHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
     public static String selectNthElement(String elementSelector , String index)
@@ -708,7 +655,7 @@ public class WebHelp {
            return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
+        { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
 

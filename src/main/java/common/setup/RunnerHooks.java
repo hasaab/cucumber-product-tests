@@ -3,19 +3,12 @@ package common.setup;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
 import org.joda.time.DateTime;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
+import org.junit.Assert;
 
 import static common.app.App.*;
-import static common.cucumber.IWebSteps.ITakeScreenShot;
-import static common.selenium.WebSteps.StartWebDriver;
-import static common.selenium.WebSteps.StopWebDriver;
+import static common.selenium.WebHelp.takeScreenShot;
+import static common.selenium.WebSteps.*;
 import static common.util.DataHelp.getTimeStamp;
 
 public class RunnerHooks {
@@ -23,7 +16,7 @@ public class RunnerHooks {
     public static boolean wantsToQuit = false;
     public static Scenario scenario;
     public static String myScenario;
-
+    public static String message;
 
     //------------------------------------------------------------------------//
 
@@ -34,23 +27,12 @@ public class RunnerHooks {
         // local use, comment before push
         System.setProperty("runDriver","chrome");
         System.setProperty("seleniumGrid","local"); //http://192.168.1.208:32001/wd/hub
-        System.setProperty("runEnvironment","PROD");
-
+        System.setProperty("runEnvironment","QA");
 
         this.scenario = scenario;
 
         if(wantsToQuit)
             throw new RuntimeException("Test FAIL : Cucumber wants to quit");
-          try {
-            if (!(System.getProperty("runDriver").isEmpty() || System.getProperty("runEnvironment").isEmpty() || System.getProperty("seleniumGrid").isEmpty())) {
-              System.out.println("************************************************************************************\n");
-              System.out.println("WebDriver, Environment and SeleniumGrid property found.");
-            }
-          }
-          catch (Exception ex) {
-            System.out.println("************************************************************************************\n");
-            System.out.println("Error : No WebDriver, Environment or SeleniumGrid property found.");
-          }
 
         myScenario = scenario.getName();
         System.setProperty("scenario",myScenario);
@@ -74,24 +56,14 @@ public class RunnerHooks {
         System.out.println("ReportPath : " + System.getProperty("reportPath") + "\n");
         System.out.println("FilePath : " + System.getProperty("filePath") + "\n");
 
-        if( System.getProperty("product").contains("Web"))
-        {
-            System.setProperty("mainURL", AllURLs.getProductURL());
-            System.out.println("MainURL : " + System.getProperty("mainURL") + "\n");
-            System.out.println("WebDriver : " + System.getProperty("runDriver") + "\n");
-            System.out.println("SeleniumGrid : " + System.getProperty("seleniumGrid") + "\n");
-        }
-
         System.out.println("Environment : " + System.getProperty("runEnvironment") + "\n");
 
-        System.out.println("************************************************************************************\n");
-
-         if(scenario.getName().contains("Web"))
-            StartWebDriver(System.getProperty("runDriver"));
-        if(scenario.getName().contains("Android"))
-            StartAndroidDriver();
-        if(scenario.getName().contains("IOS"))
-            StartIOSDriver();
+        if(scenario.getName().contains("Web"))
+            startWebDriver(System.getProperty("runDriver"));
+        else if(scenario.getName().contains("Android"))
+            startAndroidDriver();
+        else if(scenario.getName().contains("IOS"))
+            startIOSDriver();
 
         System.out.println("************************************************************************************\n");
 
@@ -102,10 +74,10 @@ public class RunnerHooks {
     {
         if(screnario.isFailed())
         {
-            ITakeScreenShot(myScenario + " failed_" + getTimeStamp("YYYY-MM-DD-HH-mm-ss-SSS"));
-            StopWebDriver();
-            //StopAndroidDriver();
-            //StartIOSDriver();
+            takeScreenShot(myScenario + " failed_" + getTimeStamp("YYYY-MM-DD-HH-mm-ss-SSS"));
+            stopWebDriver();
+            stopAndroidDriver();
+            startIOSDriver();
 
             System.out.println("Test Failed ! \n");
             }
@@ -113,9 +85,9 @@ public class RunnerHooks {
         else{
             System.out.println("Test Passed ! \n");
         }
-        StopWebDriver();
-        //StopAndroidDriver();
-        //StartIOSDriver();
+        stopWebDriver();
+        stopAndroidDriver();
+        stopIOSDriver();
         System.out.println("************************************************************************************\n");
 
 
@@ -123,5 +95,32 @@ public class RunnerHooks {
 
 
     //-----------------------------------------------------------------------------//
+
+
+    public static void AssertExecutedStep(String result)
+    {
+        if (!result.toUpperCase().contains("PASS")) {
+            RunnerHooks.scenario.write(result);
+            System.out.println(message);
+            Assert.assertTrue(false);
+        }
+        else {
+            RunnerHooks.scenario.write(result);
+            //System.out.println(result);
+        }
+    }
+
+    public static void VerifyExecutedStep(String result)
+    {
+        if (!result.toUpperCase().contains("PASS")){
+            RunnerHooks.scenario.write(result);
+            System.out.println(message);
+        }
+        else {
+            RunnerHooks.scenario.write(result);
+            //System.out.println(result);
+        }
+    }
+
 
 }

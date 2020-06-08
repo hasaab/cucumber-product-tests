@@ -26,6 +26,7 @@
 
     <junit.version>4.12</junit.version>
     <selenium.version>3.141.59</selenium.version>
+    <appium.version>7.3.0</appium.version>
     <cucumber.version>1.2.5</cucumber.version>
     <cucumber-reporting.version>4.4.0</cucumber-reporting.version>
     <gherkin.version>2.12.2</gherkin.version>
@@ -122,7 +123,7 @@
     <dependency>
       <groupId>io.appium</groupId>
       <artifactId>java-client</artifactId>
-      <version>4.0.0</version>
+      <version>${appium.version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 

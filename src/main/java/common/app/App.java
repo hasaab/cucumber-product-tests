@@ -12,23 +12,20 @@ public class App {
     public static AndroidDriver androidDriver;
     public static IOSDriver iosDriver;
 
-    public static void StartAndroidDriver() {
+    public static String startAndroidDriver() {
 
+        try{
         File app = new File(System.getProperty("projectPath"), "com.digitalchemy.calculator.freedecimal-5.1.0-www.APK4Fun.com.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("Platform Name","Android");
+        capabilities.setCapability("Platform Name", "Android");
 
         //REALDEVICE:
-        //capabilities.setCapability("deviceName", "Galaxy S5 Neo");
+        //capabilities.setCapability("deviceName", "Galaxy S10");
         //capabilities.setCapability("platformVersion", "6.0.1");
 
         //AVD:
         capabilities.setCapability("deviceName", "emulator-5554");
         capabilities.setCapability("platformVersion", "6.0");
-
-        //GENYMOTION
-        //capabilities.setCapability("deviceName", "AndroidTestDevice");
-        //capabilities.setCapability("platformVersion", "6.0");
 
         capabilities.setCapability("platform", "Windows");
         capabilities.setCapability("automationName", "Appium");
@@ -37,33 +34,33 @@ public class App {
         capabilities.setCapability("appWaitPackage", "com.digitalchemy.calculator.freedecimal");
         //capabilities.setCapability("appActivity", "");
         //capabilities.setCapability("appWaitActivity", "");
-        capabilities.setCapability("autoAcceptAlerts",true);
-        capabilities.setCapability("fullReset",true);
+        capabilities.setCapability("autoAcceptAlerts", true);
+        capabilities.setCapability("fullReset", true);
         //capabilities.setCapability("deviceReadyTimeout", 500);
         //capabilities.setCapability("newCommandTimeout", 500);
 
-        try {
             androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            //if (androiddriver.isLocked()){	System.out.println("device is locked");	}
+            //else{	System.out.println("device is not locked");	}
+            return  "PASS";
+        } catch (Exception ex) {
+            return "FAIL : " + ex.toString();
         }
-        catch (Exception ex)
-        {System.out.println("Appdriver URL is not correct");}
-
-        //if (androiddriver.isLocked()){	System.out.println("device is locked");	}
-        //else{	System.out.println("device is not locked");	}
     }
 
-    public static void StopAndroidDriver() {
-
-        try{
-        androidDriver.close();
+    public static String stopAndroidDriver() {
+        try {
+            androidDriver.close();
+            return "PASS";
+        } catch (Exception ex) {
+            return "NOTE : " + ex.toString();
         }
-        catch (Exception ex)
-        {System.out.println("Could not close android Driver or no android driver was running");}
     }
 
     //------------------------------------------------------------------------//
 
-    public static void StartIOSDriver() {
+    public static String startIOSDriver() {
+            try{
         System.out.println("*******************\n");
         System.out.println(" Launching IOS driver \n");
 
@@ -80,26 +77,25 @@ public class App {
         capabilities.setCapability("newCommandTimeout", 180);
         capabilities.setCapability("sendKeyStrategy", "oneByOne");
 
-        try{
         iosDriver = new IOSDriver(new URL("http://127.0.0.1:5010/wd/hub"), capabilities);
+
+        //if (iosDriver.isLocked()){	System.out.println("device is locked");	}
+                // else{	System.out.println("device is not locked");	}
+            return  "PASS";
         }
-        catch (Exception ex)
-        {System.out.println("Appdriver URL is not correct");}
-
-        //if (androiddriver.isLocked()){	System.out.println("device is locked");	}
-        //else{	System.out.println("device is not locked");	}
-
+        catch(Exception ex) {
+            return "FAIL : " + ex.toString();
+        }
     }
 
-    public static void StopIOSDriver() {
-
+    public static String stopIOSDriver() {
         try {
             iosDriver.close();
+            return "PASS";
         }
-        catch (Exception ex)
-        {System.out.println("Could not close ios Driver or no ios driver was running");}
+        catch(Exception ex)
+        { return  "NOTE : " + ex.toString();
+        }
     }
-
-
 
 }
