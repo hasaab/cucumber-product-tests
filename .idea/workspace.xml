@@ -20,43 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="app fix">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/IETLSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/etl/ETLSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WebDrivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/remotewebdriver/KillDrivers.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/ETL/FeatureETL.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_appium_java_client_4_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_appium_java_client_7_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_appium_java_client_4_0_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductTests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductTests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/cucumber/ServiceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/IServiceSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WebDrivers/IEDriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WebDrivers/IEDriverServer.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WebDrivers/chromeDriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/remotewebdriver/StartSeleniumNode1.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/remotewebdriver/StartSeleniumNode1.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/App/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Common/App/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebDrivers/IEDriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebDrivers/chromeDriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WebDrivers/chromeDriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
