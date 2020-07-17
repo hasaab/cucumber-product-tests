@@ -20,14 +20,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="app fix">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_appium_java_client_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/cucumber/IServiceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/IServiceSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/cucumber/ServiceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/service/ServiceSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Apps/LinkedIn/com.whatsapp_v2.16.107-451191_Android-2.1.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/App/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/cucumber/IETLSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/cucumber/IServiceSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/cucumber/IWebSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/etl/ETLSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/selenium/WebHelp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/selenium/WebSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/service/ServiceHelp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllPages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllProducts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllRequests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllURLs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/RunnerHooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/DataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/DataGen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/DataHelp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/FileHelp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WebDrivers/IEDriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WebDrivers/chromeDriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/extent-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/Pages/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/Pages/SearchPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/Requests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/SpecSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/Pages/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/Pages/SearchPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/Requests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/SpecSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/KillDrivers.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/StartSeleniumHub.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/StartSeleniumNode1.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/selenium-server-standalone-3.141.59.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/evidence1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CukesRunTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LinkedIn/App/FeatureApp.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LinkedIn/Service/FeatureREST.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LinkedIn/Web/FeatureWeb.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/App/FeatureApp.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/ETL/FeatureETL.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/Service/FeatureREST.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/Web/Home.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/Web/Search.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +122,25 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ZolStaff\HiQATech\HiQATechJava\cucumber-product-tests\src\main\resources\remotewebdriver" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\resources\features" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\" />
+      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\java\resources" />
+      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\main\java" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="LinkedIn" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="common.service" />
+      <recent name="" />
+      <recent name="common.cucumber" />
+      <recent name="Test.SetUp" />
+      <recent name="Cucumber.App" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ZolStaff\HiQATech\HiQATechJava\cucumber-product-tests\src\test\resources\features\YouTube\ETL" />
@@ -94,21 +149,8 @@
       <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\resources\features\YouTube\Web" />
       <recent name="C:\Dev\Tests\cucumber-product-tests\src\main\resources" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="common.cucumber" />
-      <recent name="Test.SetUp" />
-      <recent name="Cucumber.App" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ZolStaff\HiQATech\HiQATechJava\cucumber-product-tests\src\main\resources\remotewebdriver" />
-      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\resources\features" />
-      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\" />
-      <recent name="C:\Dev\Tests\cucumber-product-tests\src\test\java\resources" />
-      <recent name="D:\ZolCo\IdeaProjects\ProductTests\src\main\java" />
-    </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: I am comparing result files">
+  <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -117,46 +159,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: I am comparing result files" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/YouTube/ETL/FeatureETL.feature" />
-      <option name="GLUE" value="common.setup common.cucumber" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ProductTests" />
-      <option name="NAME_FILTER" value="^I am comparing result files$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^I am comparing result files$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: I am comparing result files" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: YouTubeETL - I am comparing result files" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/YouTube/ETL/FeatureETL.feature" />
-      <option name="GLUE" value="common.setup common.cucumber" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ProductTests" />
-      <option name="NAME_FILTER" value="^YouTubeETL \- I am comparing result files$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^YouTubeETL \- I am comparing result files$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: YouTubeETL - I am comparing result files" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,6 +172,7 @@
       <option name="NAME_FILTER" value="^YouTubeWeb \- I can find and play my music$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^YouTubeWeb \- I can find and play my music$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: YouTubeWeb - I can find and play my music" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -239,6 +242,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: YouTubeWeb - I can find and play my music" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -334,10 +342,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="app fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591085502174">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="102" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594986310135">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1591085502174" />
+    <state x="102" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594986310135" />
     <state x="424" y="209" width="432" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591350131050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -355,22 +364,26 @@
     </state>
     <state x="442" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591083920566" />
     <state x="472" y="0" key="FileChooserDialogImpl/0.0.1366.720@0.0.1366.720" timestamp="1591515271614" />
-    <state width="1202" height="232" key="GridCell.Tab.0.bottom" timestamp="1591364278199">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="239" key="GridCell.Tab.0.bottom" timestamp="1594987442160">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591364278199" />
-    <state width="1202" height="232" key="GridCell.Tab.0.center" timestamp="1591364278198">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594987442160" />
+    <state width="1286" height="239" key="GridCell.Tab.0.center" timestamp="1594987442159">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1202" height="232" key="GridCell.Tab.0.left" timestamp="1591364278198">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594987442159" />
+    <state width="1286" height="239" key="GridCell.Tab.0.left" timestamp="1594987442159">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1202" height="232" key="GridCell.Tab.0.right" timestamp="1591364278198">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594987442159" />
+    <state width="1286" height="239" key="GridCell.Tab.0.right" timestamp="1594987442160">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
+    <state width="1286" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594987442160" />
     <state width="1202" height="235" key="GridCell.Tab.1.bottom" timestamp="1591364278176">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -391,11 +404,12 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1591345681288" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1591515491910">
-      <screen x="0" y="0" width="1366" height="720" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1594985295209">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1591085486990" />
     <state x="0" y="0" key="SettingsEditor/0.0.1366.720@0.0.1366.720" timestamp="1591515491910" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594985295209" />
     <state x="348" y="88" key="refactoring.ChangeSignatureDialog" timestamp="1591097032393">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
