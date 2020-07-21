@@ -7,7 +7,7 @@ import org.joda.time.DateTime;
 import org.junit.Assert;
 
 import static common.app.App.*;
-import static common.selenium.WebHelp.takeScreenShot;
+import static common.selenium.WebHelp.takeScreen;
 import static common.selenium.WebSteps.*;
 import static common.util.DataHelp.getTimeStamp;
 
@@ -48,15 +48,15 @@ public class RunnerHooks {
 
         System.out.println("************************************************************************************\n");
 
-        System.out.println("SystemTime : " + System.getProperty("systemTime") + "\n");
-        System.out.println("Product Tests Starts \n");
-        System.out.println("Scenario : " + myScenario + "\n");
+        System.out.println("SystemTime : " + System.getProperty("systemTime"));
+        System.out.println("Product Tests Starts ");
+        System.out.println("Scenario : " + myScenario);
 
-        System.out.println("ProjectPath : " + System.getProperty("projectPath") + "\n");
-        System.out.println("ReportPath : " + System.getProperty("reportPath") + "\n");
-        System.out.println("FilePath : " + System.getProperty("filePath") + "\n");
+        System.out.println("ProjectPath : " + System.getProperty("projectPath"));
+        System.out.println("ReportPath : " + System.getProperty("reportPath"));
+        System.out.println("FilePath : " + System.getProperty("filePath"));
 
-        System.out.println("Environment : " + System.getProperty("runEnvironment") + "\n");
+        System.out.println("Environment : " + System.getProperty("runEnvironment"));
 
         if(scenario.getName().contains("Web"))
             startWebDriver(System.getProperty("runDriver"));
@@ -79,11 +79,11 @@ public class RunnerHooks {
             stopAndroidDriver();
             startIOSDriver();
 
-            System.out.println("Test Failed ! \n");
+            System.out.println("Test Failed !");
             }
 
         else{
-            System.out.println("Test Passed ! \n");
+            System.out.println("Test Passed !");
         }
         stopWebDriver();
         stopAndroidDriver();
@@ -101,7 +101,7 @@ public class RunnerHooks {
     {
         if (!result.toUpperCase().contains("PASS")) {
             RunnerHooks.scenario.write(result);
-            System.out.println(message);
+            //System.out.println(message);
             Assert.assertTrue(false);
         }
         else {
@@ -114,7 +114,7 @@ public class RunnerHooks {
     {
         if (!result.toUpperCase().contains("PASS")){
             RunnerHooks.scenario.write(result);
-            System.out.println(message);
+            //System.out.println(result);
         }
         else {
             RunnerHooks.scenario.write(result);

@@ -16,59 +16,20 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="app fix">
+    <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/cucumber/IServiceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/IServiceSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/cucumber/ServiceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/service/ServiceSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Apps/LinkedIn/com.whatsapp_v2.16.107-451191_Android-2.1.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/App/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/cucumber/IETLSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/cucumber/IServiceSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/cucumber/IWebSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/etl/ETLSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/selenium/WebHelp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/selenium/WebSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/service/ServiceHelp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllPages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllRequests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/AllURLs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/setup/RunnerHooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/DataBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/DataGen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/DataHelp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Common/util/FileHelp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebDrivers/IEDriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WebDrivers/chromeDriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/extent-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/Pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/Pages/SearchPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/Requests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/Linkedin/SpecSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/Pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/Pages/SearchPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/Requests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/products/YouTube/SpecSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/KillDrivers.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/StartSeleniumHub.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/StartSeleniumNode1.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/remotewebdriver/selenium-server-standalone-3.141.59.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/evidence1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CukesRunTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LinkedIn/App/FeatureApp.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LinkedIn/Service/FeatureREST.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LinkedIn/Web/FeatureWeb.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/App/FeatureApp.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/ETL/FeatureETL.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/Service/FeatureREST.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/Web/Home.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/YouTube/Web/Search.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +54,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -114,6 +74,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -315,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555428083525</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix">
+      <created>1594987656662</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594987656662</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,7 +291,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -339,7 +319,8 @@
     <MESSAGE value="clenup before day end" />
     <MESSAGE value="not used feature comment out" />
     <MESSAGE value="app fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="app fix" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="102" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594986310135">
@@ -364,26 +345,26 @@
     </state>
     <state x="442" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591083920566" />
     <state x="472" y="0" key="FileChooserDialogImpl/0.0.1366.720@0.0.1366.720" timestamp="1591515271614" />
-    <state width="1286" height="239" key="GridCell.Tab.0.bottom" timestamp="1594987442160">
+    <state width="1286" height="279" key="GridCell.Tab.0.bottom" timestamp="1595346278370">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591364278199" />
-    <state width="1286" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594987442160" />
-    <state width="1286" height="239" key="GridCell.Tab.0.center" timestamp="1594987442159">
+    <state width="1286" height="279" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595346278370" />
+    <state width="1286" height="279" key="GridCell.Tab.0.center" timestamp="1595346278369">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1286" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594987442159" />
-    <state width="1286" height="239" key="GridCell.Tab.0.left" timestamp="1594987442159">
+    <state width="1286" height="279" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595346278369" />
+    <state width="1286" height="279" key="GridCell.Tab.0.left" timestamp="1595346278369">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1286" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594987442159" />
-    <state width="1286" height="239" key="GridCell.Tab.0.right" timestamp="1594987442160">
+    <state width="1286" height="279" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595346278369" />
+    <state width="1286" height="279" key="GridCell.Tab.0.right" timestamp="1595346278369">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1286" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594987442160" />
+    <state width="1286" height="279" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595346278369" />
     <state width="1202" height="235" key="GridCell.Tab.1.bottom" timestamp="1591364278176">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -410,6 +391,10 @@
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1591085486990" />
     <state x="0" y="0" key="SettingsEditor/0.0.1366.720@0.0.1366.720" timestamp="1591515491910" />
     <state x="0" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594985295209" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1594987663603">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594987663603" />
     <state x="348" y="88" key="refactoring.ChangeSignatureDialog" timestamp="1591097032393">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -422,11 +407,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/web/WebSteps.java</url>
           <line>77</line>
           <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/common/etl/ETLSteps.java</url>

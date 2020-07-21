@@ -108,8 +108,8 @@ public class WebHelp {
 
             }
 
-            webDriver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
-            webDriver.manage().timeouts().setScriptTimeout(20,TimeUnit.SECONDS);
+            webDriver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+            webDriver.manage().timeouts().setScriptTimeout(30,TimeUnit.SECONDS);
             webDriver.manage().window().maximize();
             return  "PASS";
 
@@ -528,7 +528,7 @@ public class WebHelp {
         { RunnerHooks.message = ex.toString(); return "FAIL";}
     }
 
-    public static String takeScreenShot(String dest)
+    public static String takeScreen(String dest)
     {
         try
         {
