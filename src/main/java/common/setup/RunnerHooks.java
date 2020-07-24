@@ -7,7 +7,6 @@ import org.joda.time.DateTime;
 import org.junit.Assert;
 
 import static common.app.App.*;
-import static common.selenium.WebHelp.takeScreen;
 import static common.selenium.WebSteps.*;
 import static common.util.DataHelp.getTimeStamp;
 
@@ -101,7 +100,7 @@ public class RunnerHooks {
     {
         if (!result.toUpperCase().contains("PASS")) {
             RunnerHooks.scenario.write(result);
-            //System.out.println(message);
+            System.out.println("\n" + message);
             Assert.assertTrue(false);
         }
         else {
@@ -114,11 +113,7 @@ public class RunnerHooks {
     {
         if (!result.toUpperCase().contains("PASS")){
             RunnerHooks.scenario.write(result);
-            //System.out.println(result);
-        }
-        else {
-            RunnerHooks.scenario.write(result);
-            //System.out.println(result);
+            System.out.println("\n" + message);
         }
     }
 

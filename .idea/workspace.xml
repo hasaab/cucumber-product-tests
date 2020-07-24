@@ -25,11 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="fix">
+    <list default="true" id="983d1cbe-fde2-4eed-903b-2c0518f63612" name="Default" comment="web fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/selenium/WebSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/cucumber/IWebSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/setup/RunnerHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/products/YouTube/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/YouTube/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/products/YouTube/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/YouTube/Pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Home.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/YouTube/Web/Search.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594987656662</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="web fix">
+      <created>1595346550190</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595346550190</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +330,8 @@
     <MESSAGE value="not used feature comment out" />
     <MESSAGE value="app fix" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="web fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="web fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="102" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594986310135">
@@ -328,14 +339,19 @@
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1591085502174" />
     <state x="102" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594986310135" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595584729036">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1595584729036" />
     <state x="424" y="209" width="432" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591350131050">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="424" y="209" width="432" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1591350131050" />
-    <state x="396" y="43" width="725" height="594" key="#xdebugger.evaluate" timestamp="1591357017486">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="423" y="46" width="725" height="594" key="#xdebugger.evaluate" timestamp="1595589288628">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="396" y="43" width="725" height="594" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1591357017486" />
+    <state x="423" y="46" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1595589288628" />
     <state width="430" height="451" key="DebuggerActiveHint" timestamp="1591360683254">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -345,42 +361,46 @@
     </state>
     <state x="442" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591083920566" />
     <state x="472" y="0" key="FileChooserDialogImpl/0.0.1366.720@0.0.1366.720" timestamp="1591515271614" />
-    <state width="1286" height="279" key="GridCell.Tab.0.bottom" timestamp="1595346278370">
+    <state width="1286" height="240" key="GridCell.Tab.0.bottom" timestamp="1595593088260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591364278199" />
-    <state width="1286" height="279" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595346278370" />
-    <state width="1286" height="279" key="GridCell.Tab.0.center" timestamp="1595346278369">
+    <state width="1286" height="240" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595593088260" />
+    <state width="1286" height="240" key="GridCell.Tab.0.center" timestamp="1595593088260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1286" height="279" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595346278369" />
-    <state width="1286" height="279" key="GridCell.Tab.0.left" timestamp="1595346278369">
+    <state width="1286" height="240" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595593088260" />
+    <state width="1286" height="240" key="GridCell.Tab.0.left" timestamp="1595593088259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1286" height="279" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595346278369" />
-    <state width="1286" height="279" key="GridCell.Tab.0.right" timestamp="1595346278369">
+    <state width="1286" height="240" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595593088259" />
+    <state width="1286" height="240" key="GridCell.Tab.0.right" timestamp="1595593088260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="232" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591364278198" />
-    <state width="1286" height="279" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595346278369" />
-    <state width="1202" height="235" key="GridCell.Tab.1.bottom" timestamp="1591364278176">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="240" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595593088260" />
+    <state width="1286" height="203" key="GridCell.Tab.1.bottom" timestamp="1595589922937">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="235" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591364278176" />
-    <state width="1202" height="235" key="GridCell.Tab.1.center" timestamp="1591364278176">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="203" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595589922937" />
+    <state width="1286" height="203" key="GridCell.Tab.1.center" timestamp="1595589922937">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="235" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1591364278176" />
-    <state width="1202" height="235" key="GridCell.Tab.1.left" timestamp="1591364278175">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="203" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1595589922937" />
+    <state width="1286" height="203" key="GridCell.Tab.1.left" timestamp="1595589922936">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="235" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1591364278175" />
-    <state width="1202" height="235" key="GridCell.Tab.1.right" timestamp="1591364278176">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1286" height="203" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1595589922936" />
+    <state width="1286" height="203" key="GridCell.Tab.1.right" timestamp="1595589922937">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1202" height="235" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1591364278176" />
+    <state width="1286" height="203" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1595589922937" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1591345681288">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -391,10 +411,10 @@
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1591085486990" />
     <state x="0" y="0" key="SettingsEditor/0.0.1366.720@0.0.1366.720" timestamp="1591515491910" />
     <state x="0" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594985295209" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1594987663603">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1595346948119">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594987663603" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595346948119" />
     <state x="348" y="88" key="refactoring.ChangeSignatureDialog" timestamp="1591097032393">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -412,6 +432,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/common/etl/ETLSteps.java</url>
           <line>38</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/common/selenium/WebHelp.java</url>
+          <line>509</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

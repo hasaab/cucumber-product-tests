@@ -6,8 +6,10 @@ Feature: YouTube Home Tests
   @YouTubeWebRegression
   Scenario:YouTubeWeb - I can find videos with Zurich
     Given I navigate to the Home page
-    And I "enter" "Zurich" into the "search_field"
+    And I "type" "Zurich" into the "search_field"
     When I "click" the "search_submit"
-    When I "click" the "search_result_2_title"
-    And I wait "5" sec/s for "play"
+    And I wait "4" sec/s for "search"
+    And I am on the "Search" page
+    Then I should see the "search_result_1st"
+    And I takes screenshot as "search_evidence_1"
 

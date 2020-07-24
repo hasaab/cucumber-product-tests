@@ -26,7 +26,7 @@ public class IWebSteps {
     public static void INavigateToTheHomePage()
     { System.out.println("************************************************************************************\n");
         AssertExecutedStep(navigateToHomePage(System.getProperty("mainURL")));
-        AssertExecutedStep(onThePage("Home"));
+        AssertExecutedStep("\n" + onThePage("Home"));
     }
 
     @Given("^I navigate to the \"([^\"]*)\" element link")

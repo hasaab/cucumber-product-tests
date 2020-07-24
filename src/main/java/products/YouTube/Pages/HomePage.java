@@ -8,8 +8,8 @@ public class HomePage {
 
     public static void setElements()
     {
-        elementLocators.put("search_field", "//*[@id=\"search\"]");
-        elementLocators.put("search_submit", "//*[@id=\"search-icon-legacy\"]");
+        elementLocators.put("search_field", "//input[@id=\"search\"]");
+        elementLocators.put("search_submit", "//button[@id=\"search-icon-legacy\"]");
         elementLocators.put("search_result1_image", "//*[@id=\"img\"]");
         elementLocators.put("search_result1_title", "//*[@id=\"video-title\"]");
 
