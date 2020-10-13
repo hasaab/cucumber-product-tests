@@ -24,7 +24,7 @@
 
     <java.version>11</java.version>
 
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <selenium.version>3.141.59</selenium.version>
     <appium.version>7.3.0</appium.version>
     <cucumber.version>1.2.5</cucumber.version>
